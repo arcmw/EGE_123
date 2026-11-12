@@ -1,11 +1,11 @@
 from string import printable as p
 
 
-def convert(num, sys):  # 58
-    res = ''  #
-    while num:  # 58
+def convert(num, sys):
+    res = ''
+    while num:
         res += p[num % sys]
-        num //= sys  # 29
+        num //= sys
     return res[::-1] if res else '0'
 
 

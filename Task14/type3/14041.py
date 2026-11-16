@@ -1,5 +1,5 @@
 ans=[]
-for x in range(1,2301):
+for x in range(1,3001):
     num =4**210 +4**110-x
     cnt=0
     while num:

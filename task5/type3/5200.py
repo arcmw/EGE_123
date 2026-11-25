@@ -1,8 +1,9 @@
 ans = []
 for N in range(1, 10000):
     R = oct(N)[2:]
-    if R.count('2') + R.count('4') + R.count('6') % 2 != 0:
-        R += '46'
+    cnt = R.count('0') + R.count('2') + R.count('4') + R.count('6')
+    if cnt % 2 != 0:
+        R = R[:-3] + '46'
     else:
         R = oct((N % 8)*5)[2:] + R
     R = int(R, 8)

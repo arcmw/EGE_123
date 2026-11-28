@@ -1,6 +1,6 @@
 from re import finditer
 
-with open(r'C:\Users\User\Downloads\task24\24_1975.txt') as f:
+with open(r'C:\Users\User\PycharmProjects\EGE_123\files\task24\24_1975.txt') as f:
     data = f.read()
 
 pattern = r'[QRS]*P(([QRS])+P)+[QRS]*'
